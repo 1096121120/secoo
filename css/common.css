@@ -39,6 +39,18 @@ img {
   visibility: hidden;
 }
 
+/* .service_bottom{
+	border-bottom:none;
+	border-top:4px solid #f8a120;
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+}
+.service_top{
+	border-top:none;
+	border-bottom:4px solid #f8a120;
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+} */
 /*头部*/
 header {
   width: 100%;
@@ -47,6 +59,7 @@ header {
   background: #fff;
 }
 header .topbar {
+  position: relative;
   width: 1200px;
   height: 130px;
   margin: 0 auto;
@@ -72,17 +85,101 @@ header .topbar .head_ewm h3 {
   font-weight: 100;
 }
 header .topbar .topbar_con {
+  position: relative;
   padding-top: 10px;
   height: 30px;
+  line-height: 30px;
 }
 header .topbar .topbar_con a {
-  float: right;
-  color: #666;
+  color: #000;
   text-decoration: none;
+}
+header .topbar .topbar_con a:hover {
+  color: #f8a120;
+}
+header .topbar .topbar_con .medialink {
+  float: right;
   margin-left: 30px;
 }
 header .topbar .topbar_con .service {
   float: right;
+  position: relative;
+  transition: all 1s;
+}
+header .topbar .topbar_con .service:hover .service_modal {
+  display: block;
+}
+header .topbar .topbar_con .service .service_link {
+  position: relative;
+  display: inline-block;
+  padding-right: 12px;
+  color: #000;
+  margin-left: 30px;
+}
+header .topbar .topbar_con .service .service_link i {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  top: 13px;
+  right: 0;
+  border-bottom: none;
+  border-top: 4px solid #f8a120;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+header .topbar .topbar_con .service .service_modal {
+  display: none;
+  position: absolute;
+  left: 16px;
+  top: 30px;
+  background: #fff;
+  z-index: 999;
+  color: #999;
+  line-height: 21px;
+  border: 1px solid #f8a120;
+  white-space: nowrap;
+  padding: 6px 12px;
+}
+header .topbar .topbar_con .loginreg {
+  float: right;
+}
+header .topbar .topbar_con .loginreg a {
+  float: left;
+  margin: 0 5px;
+}
+header .topbar .topbar_con .loginreg span {
+  float: left;
+  font-size: 12px;
+  color: #f8a120;
+}
+header .topbar .topbar_con .buyCar {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  line-height: 30px;
+  font-size: 14px;
+}
+header .topbar .topbar_con .buyCar b {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  line-height: 30px;
+  background: url(../imgs/gwc.png) no-repeat;
+  vertical-align: middle;
+}
+header .topbar .topbar_con .buyCar .carNum {
+  color: #f8a120;
+}
+header .topbar .logo {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  margin-left: -50px;
 }
 header .navbar {
   width: 100%;
@@ -93,5 +190,26 @@ header .navbar .nav_container {
   height: 44px;
   margin: 0 auto;
   font-size: 14px;
-  background: red;
+}
+header .navbar .nav_container .nav-list {
+  float: left;
+  height: 44px;
+  margin-left: -21px;
+}
+header .navbar .nav_container .nav-list li {
+  float: left;
+}
+header .navbar .nav_container .nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 21px;
+  line-height: 44px;
+}
+header .navbar .nav_container .nav-list li a:hover {
+  color: #f8a120;
+}
+header .navbar .nav_container .nav-list li .nav-active {
+  color: #f8a120;
 }
