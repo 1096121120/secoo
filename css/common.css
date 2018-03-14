@@ -39,19 +39,7 @@ img {
   visibility: hidden;
 }
 
-/* .service_bottom{
-	border-bottom:none;
-	border-top:4px solid #f8a120;
-	border-left:4px solid transparent;
-	border-right:4px solid transparent;
-}
-.service_top{
-	border-top:none;
-	border-bottom:4px solid #f8a120;
-	border-left:4px solid transparent;
-	border-right:4px solid transparent;
-} */
-/*头部*/
+/*头部样式*/
 header {
   width: 100%;
   color: #000;
@@ -224,6 +212,7 @@ header .navbar .nav_container .nav-list li .nav_link span {
 }
 header .navbar .nav_container .nav-list li .nav_modal_box {
   display: none;
+  z-index: 999;
   padding: 50px 0 42px;
   border-bottom: 3px solid #f8a120;
   background-color: rgba(255, 255, 255, 0.94);
@@ -289,3 +278,5 @@ header .navbar .nav_container .search a {
   right: 0;
   top: 0;
 }
+
+/*底部样式*/
