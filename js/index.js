@@ -18,4 +18,17 @@ $(function(){
 		});
 		$(this).css({"color":"#000"});
 	});
+	//导航栏滑过效果
+	$(".nav_link").each(function(k,v){
+		$(v).parent().on("mouseenter",function(){
+			var left=parseInt($(v).parent().css("width"))/2;
+			$(v).find("span").css({"left":left})
+			$(v).find("span").show();
+			$(v).parent().find(".nav_modal_box").show();
+		});
+		$(v).parent().on("mouseleave",function(){
+			$(v).find("span").hide();
+			$(v).parent().find(".nav_modal_box").hide();
+		});
+	});
 });

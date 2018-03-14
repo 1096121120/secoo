@@ -199,17 +199,93 @@ header .navbar .nav_container .nav-list {
 header .navbar .nav_container .nav-list li {
   float: left;
 }
-header .navbar .nav_container .nav-list li a {
+header .navbar .nav_container .nav-list li .nav_link {
   text-decoration: none;
+  position: relative;
   color: #fff;
   font-size: 14px;
   display: inline-block;
   padding: 0 21px;
   line-height: 44px;
 }
-header .navbar .nav_container .nav-list li a:hover {
+header .navbar .nav_container .nav-list li .nav_link:hover {
+  color: #f8a120;
+}
+header .navbar .nav_container .nav-list li .nav_link span {
+  display: none;
+  position: absolute;
+  left: 21px;
+  bottom: 0px;
+  margin-left: -6px;
+  border-top: none;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box {
+  display: none;
+  padding: 50px 0 42px;
+  border-bottom: 3px solid #f8a120;
+  background-color: rgba(255, 255, 255, 0.94);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal ul {
+  width: 1400px;
+  overflow: hidden;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal ul li {
+  float: left;
+  width: 250px;
+  padding-right: 210px;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal ul li h4 {
+  margin: 0 0 15px 0;
+  font-weight: 16px;
+  font-weight: bold;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal ul li a {
+  float: left;
+  width: 125px;
+  line-height: 30px;
+  color: #666;
+  font-size: 14px;
+}
+header .navbar .nav_container .nav-list li .nav_modal_box .nav_modal ul li a:hover {
   color: #f8a120;
 }
 header .navbar .nav_container .nav-list li .nav-active {
   color: #f8a120;
+}
+header .navbar .nav_container .search {
+  height: 38px;
+  float: right;
+  background: red;
+  border: 3px solid #1a191e;
+  position: relative;
+}
+header .navbar .nav_container .search .search_input {
+  width: 164px;
+  height: 24px;
+  outline: none;
+  border: none;
+  line-height: 24px;
+  padding: 7px 50px 7px 10px;
+}
+header .navbar .nav_container .search a {
+  display: block;
+  width: 38px;
+  padding-top: 3px;
+  text-align: center;
+  line-height: 38px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
