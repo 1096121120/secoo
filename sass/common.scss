@@ -276,3 +276,64 @@ header{
 }
 
 /*底部样式*/
+footer{
+	width:100%;
+	background:#f5f5f5;
+	margin-top:70px;
+	padding:37px 0 66px;
+	font-size:12px;
+	overflow:hidden;
+	.footer_list{
+		width:1200px;
+		margin:0 auto;
+		overflow:hidden;
+		li{
+			float:left;
+			width:236px;
+			line-height:34px;
+			font-size:14px;
+			a{
+				display:block;
+				color:#000;
+				&:hover{
+					color:#f8a120;
+				}
+			}
+		}
+	}
+	.footer_info{
+		width:1200px;
+		margin:25px auto 0;
+		line-height:36px;
+		p{
+			font-size:14px;
+		}
+		.p_info{
+			span{
+				font-size:14px;
+				margin-right:28px;
+				a{
+					color:#000;
+					&:hover{
+						color:#f8a120;
+					}
+					img{
+						vertical-align:middle;
+					}
+				}
+			}
+		}
+		.p_img{
+			margin-top:8px;
+			a{
+				float:left;
+				margin-right:20px;
+				width:108px;
+				height:40px;
+				img{
+					width:100%;
+				}
+			}
+		}
+	}
+}

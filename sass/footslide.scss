@@ -60,20 +60,20 @@
 	}
 	
 }
-.dots {
-		position: absolute;
-		left: 50%;
-		margin-left:-78px;
-		bottom: -30px;
-		width: 136px;
-		a {
-			margin: 6px 2px;
-			display: inline-block;
-			width: 20px;
-			height: 3px;
-			background: #cccccc;
-		}
-		.active {
-			background: #f8a120;
-		}
+.dots{
+	position: absolute;
+	left: 50%;
+	margin-left:-78px;
+	bottom: -30px;
+	width: 136px;
+	a {
+		margin: 6px 2px;
+		display: inline-block;
+		width: 20px;
+		height: 3px;
+		background: #cccccc;
 	}
+	.active {
+		background: #f8a120;
+	}
+}
