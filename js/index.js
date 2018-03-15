@@ -51,7 +51,7 @@ $(function(){
 
 });
 //首页轮播图
-var arr=["slide-1.jpg","slide-2.jpg","slide-3.jpg","slide-4.jpg"];
+var arr=["slide-1.jpg","slide-2.jpg","slide-3.jpg","slide-4.jpg","slide-5.jpg"];
 var ord=0;//定义当前图片序号
 var myTimer=null;
 
