@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*轮播图*/
 .banner {
   position: relative;
   width: 1200px;
@@ -68,4 +70,79 @@
   margin-right: 10px;
   cursor: pointer;
   line-height: 90px;
+}
+
+/*中部图文区域*/
+.imgContent {
+  width: 1200px;
+  margin: 97px auto 0;
+  font-size: 16px;
+}
+.imgContent .imgLink {
+  float: left;
+  width: 590px;
+  height: 450px;
+  margin-right: 20px;
+  color: #000;
+  transition: all .7s;
+}
+.imgContent .imgLink:nth-child(2n) {
+  margin-right: 0;
+}
+.imgContent .imgLink:hover {
+  color: #f8a120;
+}
+.imgContent .imgLink:hover div {
+  border-bottom: 3px solid #f8a120;
+}
+.imgContent .imgLink:hover div img {
+  transform: scale(1.1);
+}
+.imgContent .imgLink div {
+  width: 590px;
+  height: 327px;
+  border-bottom: 3px solid transparent;
+  overflow: hidden;
+  transition: all .7s;
+}
+.imgContent .imgLink div img {
+  width: 100%;
+  transition: all .7s;
+}
+.imgContent .imgLink h3 {
+  margin: 20px 0 12px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 100;
+}
+.imgContent .imgLink p {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/*下方轮播图区域*/
+.slide_foot_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.slide_foot_box .foot_title {
+  position: relative;
+  margin: 76px auto 104px;
+  border-top: 1px solid #f8a120;
+}
+.slide_foot_box .foot_title .gust {
+  display: inline-block;
+  width: 160px;
+  font-size: 26px;
+  left: 50%;
+  top: -20px;
+  background: #fff;
+  margin-left: -80px;
+  text-align: center;
+  position: absolute;
+}
+.slide_foot_box .foot_title .slide_foot {
+  width: 1200px;
+  height: 310px;
+  margin: 0 auto;
 }
