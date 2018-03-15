@@ -7,7 +7,7 @@ class Carousel{
 		this.timeout=timeout;
 
 		//鼠标移入事件
-		let directionBtn = this.el.getElementsByClassName('direction-btn')[0];
+		let directionBtn = document.getElementsByClassName('direction-btn')[0];
 		this.el.onmouseover=()=>{
 			directionBtn.style.display="block";
 			//清除定时器
@@ -37,11 +37,19 @@ class Carousel{
 		this.dotIndex=0;
 
 		//获取按钮的长度
-		this.dots=this.el.getElementsByClassName("dots")[0];
+		this.dots=document.getElementsByClassName("dots")[0];
+		this.dots.onmouseenter=()=>{
+			//清除定时器
+			clearInterval(this.timer);
+		}
+		this.dots.onmouseleave=()=>{
+			//自动播放
+			this.autoMove();
+		}
 		this.dotLen=this.dots.children.length;
 
 		for(let i=0;i<this.dotLen;i++){
-			this.dots.children[i].onmouseover=()=>{
+			this.dots.children[i].onclick=()=>{
 				this.liIndex=i;
 				this.dotIndex=i;
 

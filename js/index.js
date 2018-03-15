@@ -48,6 +48,7 @@ $(function(){
 		$(".arrow").stop(true).animate({"opacity":0},200);
 	});
 
+
 });
 //首页轮播图
 var arr=["slide-1.jpg","slide-2.jpg","slide-3.jpg","slide-4.jpg"];

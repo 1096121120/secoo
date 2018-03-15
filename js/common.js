@@ -1,11 +1,11 @@
-function $(id) {
+/*function $(id) {
 	return document.getElementById(id);
 }
-
+*/
 /*
 	缓冲运动函数
 */
-function bufferMove(obj, target, fn, ratio = 8) {
+function bufferMove(obj, target, fn, ratio = 6) {
 	// 清除定时器
 	clearInterval(obj.timer);
 
