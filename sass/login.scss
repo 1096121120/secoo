@@ -1,3 +1,6 @@
+body{
+	background:#f5f5f5;
+}
 header{
 	width:100%;
 	height:70px;
@@ -36,7 +39,7 @@ section{
 		.login_in{
 			float:right;
 			width:310px;
-			padding:30px 35px;
+			padding:30px 35px 15px;
 			margin-top:120px;
 			background:#fff;
 			box-shadow:0 0 23px rgba(0,0,0,.2);
@@ -55,36 +58,167 @@ section{
 						font:normal 18px/20px microsoft yahei;
 						margin-bottom:15px;
 					}
-					.on{}
-				}
-				.login_ewm{
-					width:100%;
-					height:192px;
-					position:relative;
-					.ewm_img{
-						width:192px;
-						position:absolute;
-						left:59px;
-						top:0;
-					}
-					.ewm_tip{
-						width:160px;
-						position:absolute;
-						right:0;
-						top:0;
-						opacity:0;
-					}
-				}
-				p{
-					font-size:14px;
-					font-weight:bold;
-					color:#000;
-					text-align:center;
-					margin-top:35px;
-					a{
+					.on{
 						color:#f19108;
-						margin:0 5px;
-						text-decoration:underline;
+					}
+				}
+				.sao_login{
+					display:block;
+					.login_ewm{
+						width:100%;
+						height:192px;
+						position:relative;
+						.ewm_img{
+							width:192px;
+							position:absolute;
+							left:59px;
+							top:0;
+						}
+						.ewm_tip{
+							width:160px;
+							position:absolute;
+							right:0;
+							top:0;
+							opacity:0;
+						}
+					}
+					p{
+						font-size:14px;
+						font-weight:bold;
+						color:#000;
+						text-align:center;
+						margin-top:35px;
+						a{
+							color:#f19108;
+							margin:0 5px;
+							text-decoration:underline;
+						}
+					}
+				}
+				.pass_login{
+					display:none;
+					.error_tip{
+						border:1px solid  #ffac76;
+						background:#ffffcf url("../imgs/error_tips.png") no-repeat left center;
+						padding-left:30px;
+						margin-bottom:12px;
+						line-height:25px;
+						color:#ff0200;
+					}
+					.login_input{
+						li{
+							position:relative;
+							width:310px;
+							margin-bottom:15px;
+							.label_input{
+								position:absolute;
+								height:50px;
+								line-height:50px;
+								left:10px;
+								top:0;
+								color:#999;
+								cursor:text;
+								font-size:12px;
+							}
+							.username,.password,.checkCode{
+								width:298px;
+								height:20px;
+								line-height:20px;
+								padding:14px 5px;
+								font-size:14px;
+								font-weight:bold;
+								outline:none;
+								border:1px solid rgb(222,222,222);
+							}
+							p{
+								height:20px;
+								color:#666;
+							}
+							.checkCode{
+								width:100px;
+								margin-right:10px;
+							}
+							#logImgCode{
+								width:80px;
+								height:40px;
+								vertical-align:middle;
+							}
+							.changeCode{
+								display:inline-block;
+								height:20px;
+								line-height:20px;
+								color:#666;
+							}
+							.label_remember{
+								position:relative;
+								top:-10px;
+								#remember{
+									vertical-align:middle;
+									margin-right:3px;
+								}
+							}
+						}
+					}
+					.btn_submit{
+						padding:9px 0 8px 0;
+						input[type="button"]{
+							width:100%;
+							background:#f19108;
+							border:0;
+							font-size:16px;
+							color:#fff;
+							font-weight:bold;
+							text-align:center;
+							height:50px;
+							line-height:50px;
+							cursor:pointer;
+						}
+					}
+				}
+				.other_login{
+					margin-top:30px;
+					padding-bottom:30px;
+					p{
+						color:#999;
+						padding:5px 0;
+						height:20px;
+						a{
+							display:inline-block;
+							font-size:12px;
+							width:60px;
+							height:25px;
+							cursor:pointer;
+							padding-right:10px;
+							color:#666;
+							img{
+								// vertival-align:middle;
+							}
+							.wx_img{
+								vertical-align:middle;
+								height:24px;
+							}
+							span{
+								margin-left:5px;
+							}
+						}
+					}
+				}
+				.login_foot{
+					width:100%;
+					font-size:12px;
+					line-height:12px;
+					.f_span1{
+						color:#999;
+						float:left;
+						a{
+							color:#f19108;
+						}
+					}
+					.f_span2{
+						float:right;
+						a{
+							color:#666;
+						}
 					}
 				}
 			}

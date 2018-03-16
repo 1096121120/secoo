@@ -1,3 +1,7 @@
+body {
+  background: #f5f5f5;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -38,7 +42,7 @@ section .login_content {
 section .login_content .login_in {
   float: right;
   width: 310px;
-  padding: 30px 35px;
+  padding: 30px 35px 15px;
   margin-top: 120px;
   background: #fff;
   box-shadow: 0 0 23px rgba(0, 0, 0, 0.2);
@@ -60,33 +64,160 @@ section .login_content .login_in .login .login_title li {
   font: normal 18px/20px microsoft yahei;
   margin-bottom: 15px;
 }
-section .login_content .login_in .login .login_ewm {
+section .login_content .login_in .login .login_title .on {
+  color: #f19108;
+}
+section .login_content .login_in .login .sao_login {
+  display: block;
+}
+section .login_content .login_in .login .sao_login .login_ewm {
   width: 100%;
   height: 192px;
   position: relative;
 }
-section .login_content .login_in .login .login_ewm .ewm_img {
+section .login_content .login_in .login .sao_login .login_ewm .ewm_img {
   width: 192px;
   position: absolute;
   left: 59px;
   top: 0;
 }
-section .login_content .login_in .login .login_ewm .ewm_tip {
+section .login_content .login_in .login .sao_login .login_ewm .ewm_tip {
   width: 160px;
   position: absolute;
   right: 0;
   top: 0;
   opacity: 0;
 }
-section .login_content .login_in .login p {
+section .login_content .login_in .login .sao_login p {
   font-size: 14px;
   font-weight: bold;
   color: #000;
   text-align: center;
   margin-top: 35px;
 }
-section .login_content .login_in .login p a {
+section .login_content .login_in .login .sao_login p a {
   color: #f19108;
   margin: 0 5px;
   text-decoration: underline;
+}
+section .login_content .login_in .login .pass_login {
+  display: none;
+}
+section .login_content .login_in .login .pass_login .error_tip {
+  border: 1px solid  #ffac76;
+  background: #ffffcf url("../imgs/error_tips.png") no-repeat left center;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 25px;
+  color: #ff0200;
+}
+section .login_content .login_in .login .pass_login .login_input li {
+  position: relative;
+  width: 310px;
+  margin-bottom: 15px;
+}
+section .login_content .login_in .login .pass_login .login_input li .label_input {
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  left: 10px;
+  top: 0;
+  color: #999;
+  cursor: text;
+  font-size: 12px;
+}
+section .login_content .login_in .login .pass_login .login_input li .username, section .login_content .login_in .login .pass_login .login_input li .password, section .login_content .login_in .login .pass_login .login_input li .checkCode {
+  width: 298px;
+  height: 20px;
+  line-height: 20px;
+  padding: 14px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid #dedede;
+}
+section .login_content .login_in .login .pass_login .login_input li p {
+  height: 20px;
+  color: #666;
+}
+section .login_content .login_in .login .pass_login .login_input li .checkCode {
+  width: 100px;
+  margin-right: 10px;
+}
+section .login_content .login_in .login .pass_login .login_input li #logImgCode {
+  width: 80px;
+  height: 40px;
+  vertical-align: middle;
+}
+section .login_content .login_in .login .pass_login .login_input li .changeCode {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+}
+section .login_content .login_in .login .pass_login .login_input li .label_remember {
+  position: relative;
+  top: -10px;
+}
+section .login_content .login_in .login .pass_login .login_input li .label_remember #remember {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+section .login_content .login_in .login .pass_login .btn_submit {
+  padding: 9px 0 8px 0;
+}
+section .login_content .login_in .login .pass_login .btn_submit input[type="button"] {
+  width: 100%;
+  background: #f19108;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+section .login_content .login_in .login .other_login {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+section .login_content .login_in .login .other_login p {
+  color: #999;
+  padding: 5px 0;
+  height: 20px;
+}
+section .login_content .login_in .login .other_login p a {
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  padding-right: 10px;
+  color: #666;
+}
+section .login_content .login_in .login .other_login p a .wx_img {
+  vertical-align: middle;
+  height: 24px;
+}
+section .login_content .login_in .login .other_login p a span {
+  margin-left: 5px;
+}
+section .login_content .login_in .login .login_foot {
+  width: 100%;
+  font-size: 12px;
+  line-height: 12px;
+}
+section .login_content .login_in .login .login_foot .f_span1 {
+  color: #999;
+  float: left;
+}
+section .login_content .login_in .login .login_foot .f_span1 a {
+  color: #f19108;
+}
+section .login_content .login_in .login .login_foot .f_span2 {
+  float: right;
+}
+section .login_content .login_in .login .login_foot .f_span2 a {
+  color: #666;
 }

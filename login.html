@@ -5,6 +5,7 @@
 	<title>寺库用户登录-免费注册</title>
 	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/tf_common.css">
 	<link rel="stylesheet" type="text/css" href="css/footslide.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
@@ -16,9 +17,9 @@
 				<img src="imgs/logo.png" alt="">
 			</div>
 			<div class="header_right">
-				<a href="">寺库首页</a>
-				<a href="">收藏寺库</a>
-				<a href="">寺库APP</a>
+				<a href="index.html">寺库首页</a>
+				<a href="javascript:;">收藏寺库</a>
+				<a href="javascript:;">寺库APP</a>
 			</div>
 		</div>
 	</header>
@@ -28,21 +29,119 @@
 			<div class="login_in">
 				<div class="login">
 					<ul class="login_title">
-						<li>扫码登录</li>
+						<li class="on">扫码登录</li>
 						<li>密码登录</li>
 					</ul>
+					<!-- 扫码登录 -->
 					<div class="sao_login">
 						<div class="login_ewm">
 							<img src="imgs/erweima.png" class="ewm_img">
 							<img src="imgs/ewmts.jpg" class="ewm_tip">
 						</div>
-						<p>打开<a href="">寺库APP</a>扫一扫登录</p>
+						<p>打开<a href="javascript:;">寺库APP</a>扫一扫登录</p>
+					</div>
+					<!-- 密码登录 -->
+					<div class="pass_login">
+						<div class="error_tip">
+							请输入用户名
+						</div>
+						<ul class="login_input">
+							<li>
+								<label class="label_input">用户名/手机号/邮箱</label>
+								<input type="text" class="username">
+								<i></i>
+							</li>
+							<li>
+								<label class="label_input">密码</label>
+								<input type="password" class="password">
+								<i></i>
+							</li>
+							<li>
+								<p>验证码：</p>
+								<input type="text" class="checkCode">
+								<img id="logImgCode" style="cursor: pointer;" src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329635" width="80" height="40">
+								<a href="javascript:;" class="changeCode">换一换</a>
+							</li>
+							<li>
+								<label for="remember" class="label_remember">
+									<input type="checkbox" id="remember">记住密码
+								</label>
+							</li>
+						</ul>
+						<div class="btn_submit">
+							<input type="button" value="立即登录">
+						</div>
+					</div>
+					<!-- 其它登录方式 -->
+					<div class="other_login">
+						<p>使用合作网站账号登录</p>
+						<p>
+							<a href="">
+								<img src="imgs/qq.jpg">
+								<span>QQ</span>
+							</a>
+							<a href="">
+								<img src="imgs/weixin.png" class="wx_img">
+								<span>微信</span>
+							</a>
+						</p>
+					</div>
+					<div class="login_foot">
+						<span class="f_span1">
+							还不是寺库会员？
+							<a href="reg.html">免费注册</a>
+						</span>
+						<span class="f_span2">
+							<a href="javascript:;">忘记密码？</a>
+						</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<!-- footer By-Candy -->
+	<footer>
+		<ul class="footer_list">
+			<li>
+				<a href="">新手指南</a>
+				<a href="">付款方式</a>
+				<a href="">物流配送</a>
+				<a href="">售后服务</a>
+			</li>
+			<li>
+				<a href="">寺库微博</a>
+				<a href="">友情链接</a>
+				<a href="">奢侈品热词</a>
+			</li>
+			<li>
+				<a href="">加入寺库</a>
+				<a href="">联系我们</a>
+				<a href="">关于寺库</a>
+				<a href="">帮助中心</a>
+			</li>
+			<li>
+				<a href="">寺库奢侈品养护</a>
+				<a href="">寺库招商</a>
+				<a href="">Investors</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="p_info">
+				<span>统一社会信用代码：91110102689248179K</span>
+				<span><a href="javascript:;"><img src="imgs/pcfooterbatb.png" alt="">京公安备11010102001392</a></span>
+				<span>京ICP证110119号 京ICP备09084709号-3</span>
+				<span>ISO9001中国质量管理体系认证</span>
+			</p>
+			<p class="p_compy">COPYRIGHT © 2010-2017 北京寺库商贸有限公司 版权所有</p>
+			<p class="p_img">
+				<a href=""><img src="imgs/f_01.jpg" alt=""></a>
+				<a href=""><img src="imgs/f_04.jpg" alt=""></a>
+				<a href=""><img src="imgs/cnnic.png" alt=""></a>
+				<a href=""><img src="imgs/kexin.jpg" alt=""></a>
+				<a href=""><img src="imgs/f_03.jpg" alt=""></a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
