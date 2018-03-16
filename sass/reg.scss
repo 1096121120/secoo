@@ -1,0 +1,297 @@
+body{
+	background:#f5f5f5;
+}
+header{
+	width:100%;
+	height:70px;
+	background:rgba(0,0,0,.8);
+	.header_con{
+		width:1200px;
+		margin:0 auto;
+		.header_left{
+			float:left;
+			width:30px;
+		}
+		.header_right{
+			float:right;
+			a{
+				display:inline-block;
+				line-height:70px;
+				color:#999;
+				padding:0 10px;
+				&:hover{
+					color:#c69c6d;
+				}
+			}
+		}
+	}
+}
+
+section{
+	width:100%;
+	padding:30px 0;
+	background:#fdf8f4;
+	.reg_content{
+		width:1200px;
+		height:720px;
+		margin:0 auto;
+		background:url("../imgs/login_03.jpg")no-repeat center center;
+		.reg_in{
+			float:right;
+			width:310px;
+			padding:30px 35px;
+			margin-top:120px;
+			background:#fff;
+			box-shadow:0 0 23px rgba(0,0,0,.2);
+			.reg{
+				width:310px;
+				margin:0 auto 30px;
+				.reg_list{
+					width:100%;
+					li{
+						.user{
+							span{
+								float:left;
+								width:60px;
+								height:40px;
+								line-height:40px;
+								color:#666;
+							}
+							.user_tip{
+								float:right;
+								width:240px;
+								height:40px;
+								line-height:40px;
+								text-align:right;
+								color:#999;
+							}
+						}
+						.user_input{
+							input{
+								width:298px;
+								height:20px;
+								line-height:20px;
+								padding:10px 5px;
+								outline:none;
+								border:1px solid #dedede;
+								font-size:14px;
+								font-weight:bold;
+							}
+						}
+
+						.pass{
+							span{
+								float:left;
+								width:60px;
+								height:40px;
+								line-height:40px;
+								color:#666;
+							}
+							.pass_tip{
+								float:right;
+								width:240px;
+								height:40px;
+								line-height:40px;
+								text-align:right;
+								color:#999;
+							}
+						}
+						.pass_input{
+							input{
+								width:298px;
+								height:20px;
+								line-height:20px;
+								padding:10px 5px;
+								outline:none;
+								border:1px solid #dedede;
+								font-size:14px;
+								font-weight:bold;
+							}
+						}
+
+						.rePass{
+							span{
+								float:left;
+								width:60px;
+								height:40px;
+								line-height:40px;
+								color:#666;
+							}
+							.rePass_tip{
+								float:right;
+								width:240px;
+								height:40px;
+								line-height:40px;
+								text-align:right;
+								color:#999;
+							}
+						}
+						.rePass_input{
+							input{
+								width:298px;
+								height:20px;
+								line-height:20px;
+								padding:10px 5px;
+								outline:none;
+								border:1px solid #dedede;
+								font-size:14px;
+								font-weight:bold;
+							}
+						}
+
+						.checkMa{
+							overflow:hidden;
+							span{
+								float:left;
+								width:60px;
+								height:40px;
+								line-height:40px;
+								color:#666;
+							}
+						}
+						.checkCode{
+							float:left;
+							width:115px;
+							height:20px;
+							outline:none;
+							line-height:20px;
+							padding:10px 5px;
+							border:1px solid #dedede;
+							font-size:14px;
+							font-weight:bold;
+						}
+						.imgCode{
+							float:left;
+							cursor:pointer;
+							margin-left:10px;
+							vertical-align:middle;
+							width:80px;
+							height:40px;
+						}
+						a{
+							float:left;
+							margin:12px 0 0 5px;
+							color:#666;
+						}
+						.checkPh{
+							padding-top:12px;
+							input{
+								float:left;
+								width:115px;
+								height:16px;
+								outline:none;
+								padding:12px 5px;
+								line-height:20px;
+								border:1px solid #dedede;
+								font-size:14px;
+								font-weight:bold;
+							}
+							.PhoneCode{
+								float:left;
+								width:140px;
+								margin-left:4px;
+								a{
+									display:inline-block;
+									margin-left:4px;
+									color:#5d5d5d;
+									border:1px solid #cfcfcf;
+									padding:0 10px;
+									line-height:23px;
+									text-align:center;
+								}
+							}
+						}
+						.vip_check{
+								width:100%;
+								span{
+									float:left;
+									width:100px;
+									height:40px;
+									line-height:40px;
+									color:#666;
+									input{
+										margin-right:4px;
+										position:relative;
+										top:2px;
+									}
+								}
+								.vip_error{
+									float:right;
+									width:150px;
+									color:red;
+									font-weight:bold;
+									height:40px;
+									line-height:40px;
+									text-align:right;
+								}
+						}
+						.vip_input{
+							display:none;
+							input{
+								width:298px;
+								height:20px;
+								outline:none;
+								line-height:20px;
+								padding:10px 5px;
+								border:1px solid #dedede;
+								font-size:14px;
+								font-weight:bold;
+							}
+						}
+						
+					}
+					.checkMa_li{
+						display:none;
+					}
+					.checkPh_li{
+						display:none;
+						overflow:hidden;
+					}
+				}
+				.btn_submit{
+					padding:9px 0 8px 0;
+					input[type="submit"]{
+						width:100%;
+						background:#f19108;
+						border:0;
+						font-size:16px;
+						color:#fff;
+						font-weight:bold;
+						text-align:center;
+						height:50px;
+						line-height:50px;
+						cursor:pointer;
+					}
+				}
+				.agree_p{
+					width:100%;
+					height:20px;
+					line-height:20px;
+					padding:5px 0;
+					color:#999;
+					input{
+						position:relative;
+						top:2px;
+						margin-right:4px;
+					}
+					a{
+						color:#999;
+					}
+				}
+				.reg_foot{
+					width:100%;
+					font-size:12px;
+					line-height:12px;
+					padding-top:30px;
+					.f_span1{
+						color:#999;
+						float:left;
+						a{
+							color:#f19108;
+						}
+					}
+				}
+			}
+		}
+	}
+}
