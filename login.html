@@ -42,35 +42,37 @@
 					</div>
 					<!-- 密码登录 -->
 					<div class="pass_login">
-						<div class="error_tip">
-							请输入用户名
-						</div>
-						<ul class="login_input">
-							<li>
-								<label class="label_input">用户名/手机号/邮箱</label>
-								<input type="text" class="username">
-								<i></i>
-							</li>
-							<li>
-								<label class="label_input">密码</label>
-								<input type="password" class="password">
-								<i></i>
-							</li>
-							<li>
-								<p>验证码：</p>
-								<input type="text" class="checkCode">
-								<img id="logImgCode" style="cursor: pointer;" src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329635" width="80" height="40">
-								<a href="javascript:;" class="changeCode">换一换</a>
-							</li>
-							<li>
-								<label for="remember" class="label_remember">
-									<input type="checkbox" id="remember">记住密码
-								</label>
-							</li>
-						</ul>
-						<div class="btn_submit">
-							<input type="button" value="立即登录">
-						</div>
+						<form action="" class="iForm">
+							<div class="error_tip">
+								请输入用户名
+							</div>
+							<ul class="login_input">
+								<li>
+									<label class="label_input label_user">用户名/手机号/邮箱</label>
+									<input type="text" class="username">
+									<i class="user_icon"></i>
+								</li>
+								<li>
+									<label class="label_input label_pass">密码</label>
+									<input type="password" class="password">
+									<i class="pass_icon"></i>
+								</li>
+								<li class="checkMa">
+									<p>验证码：</p>
+									<input type="text" class="checkCode">
+									<img id="logImgCode" style="cursor: pointer;" src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329635" width="80" height="40">
+									<a href="javascript:;" class="changeCode">换一换</a>
+								</li>
+								<li>
+									<label for="remember" class="label_remember">
+										<input type="checkbox" checked="checked" id="remember">记住密码
+									</label>
+								</li>
+							</ul>
+							<div class="btn_submit">
+								<input type="submit" value="立即登录" class="login_btn">
+							</div>
+						</form>
 					</div>
 					<!-- 其它登录方式 -->
 					<div class="other_login">

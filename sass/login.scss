@@ -98,6 +98,7 @@ section{
 				.pass_login{
 					display:none;
 					.error_tip{
+						display:none;
 						border:1px solid  #ffac76;
 						background:#ffffcf url("../imgs/error_tips.png") no-repeat left center;
 						padding-left:30px;
@@ -129,6 +130,34 @@ section{
 								font-weight:bold;
 								outline:none;
 								border:1px solid rgb(222,222,222);
+								transition:border linear .2s, box-shadow linear .2s;
+							}
+							.user_icon{
+								position:absolute;
+								width:15px;
+								height:17px;
+								right:10px;
+								top:16px;
+								background:url("../imgs/login_04.png")no-repeat;
+							}
+							.user_icon_focus{
+								background-position:-19px 0;
+							}
+							.pass_icon{
+								position:absolute;
+								width:15px;
+								height:17px;
+								right:10px;
+								top:16px;
+								background:url("../imgs/login_04.png")no-repeat;
+								background-position:0 -20px;
+							}
+							.pass_icon_focus{
+								background-position:-19px -20px;
+							}
+							.inputfocus{
+								border:1px solid rgb(255, 173, 119);
+								box-shadow:0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(240, 127, 5, .4);
 							}
 							p{
 								height:20px;
@@ -158,10 +187,13 @@ section{
 								}
 							}
 						}
+						.checkMa{
+							display:none;
+						}
 					}
 					.btn_submit{
 						padding:9px 0 8px 0;
-						input[type="button"]{
+						input[type="submit"]{
 							width:100%;
 							background:#f19108;
 							border:0;

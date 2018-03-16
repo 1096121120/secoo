@@ -104,6 +104,7 @@ section .login_content .login_in .login .pass_login {
   display: none;
 }
 section .login_content .login_in .login .pass_login .error_tip {
+  display: none;
   border: 1px solid  #ffac76;
   background: #ffffcf url("../imgs/error_tips.png") no-repeat left center;
   padding-left: 30px;
@@ -135,6 +136,34 @@ section .login_content .login_in .login .pass_login .login_input li .username, s
   font-weight: bold;
   outline: none;
   border: 1px solid #dedede;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+section .login_content .login_in .login .pass_login .login_input li .user_icon {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  right: 10px;
+  top: 16px;
+  background: url("../imgs/login_04.png") no-repeat;
+}
+section .login_content .login_in .login .pass_login .login_input li .user_icon_focus {
+  background-position: -19px 0;
+}
+section .login_content .login_in .login .pass_login .login_input li .pass_icon {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  right: 10px;
+  top: 16px;
+  background: url("../imgs/login_04.png") no-repeat;
+  background-position: 0 -20px;
+}
+section .login_content .login_in .login .pass_login .login_input li .pass_icon_focus {
+  background-position: -19px -20px;
+}
+section .login_content .login_in .login .pass_login .login_input li .inputfocus {
+  border: 1px solid #ffad77;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(240, 127, 5, 0.4);
 }
 section .login_content .login_in .login .pass_login .login_input li p {
   height: 20px;
@@ -163,10 +192,13 @@ section .login_content .login_in .login .pass_login .login_input li .label_remem
   vertical-align: middle;
   margin-right: 3px;
 }
+section .login_content .login_in .login .pass_login .login_input .checkMa {
+  display: none;
+}
 section .login_content .login_in .login .pass_login .btn_submit {
   padding: 9px 0 8px 0;
 }
-section .login_content .login_in .login .pass_login .btn_submit input[type="button"] {
+section .login_content .login_in .login .pass_login .btn_submit input[type="submit"] {
   width: 100%;
   background: #f19108;
   border: 0;
