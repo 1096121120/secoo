@@ -48,6 +48,9 @@ section{
 				margin:0 auto 30px;
 				.reg_list{
 					width:100%;
+					input{
+						transition:border linear .2s, box-shadow linear .2s;
+					}
 					li{
 						.user{
 							span{
@@ -59,6 +62,7 @@ section{
 							}
 							.user_tip{
 								float:right;
+								font-size:14px;
 								width:240px;
 								height:40px;
 								line-height:40px;
@@ -88,6 +92,7 @@ section{
 								color:#666;
 							}
 							.pass_tip{
+								display:none;
 								float:right;
 								width:240px;
 								height:40px;
@@ -118,6 +123,7 @@ section{
 								color:#666;
 							}
 							.rePass_tip{
+								display:none;
 								float:right;
 								width:240px;
 								height:40px;

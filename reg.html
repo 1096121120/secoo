@@ -29,12 +29,12 @@
 			<div class="reg_in">
 				<div class="reg">
 					<!-- 注册表单 -->
-					<form action="">
+					<form action="" class="login_form">
 						<ul class="reg_list">
 							<li>
 								<div class="user">
 									<span>用户名</span>
-									<div class="user_tip">请输入手机或者邮箱</div>
+									<div class="user_tip">请输入手机号或者邮箱</div>
 								</div>
 								<div class="user_input">
 									<input type="text">
@@ -45,7 +45,7 @@
 									<span>验证码</span>
 								</div>
 								<input type="text" class="checkCode">
-								<img class="imgCode" src="//passport.secoo.com/common/captcha.jsp?type=sms&amp;a=1521199594248">
+								<img class="imgCode" id="logImgCode" src="//passport.secoo.com/common/captcha.jsp?type=sms&amp;a=1521199594248">
 								<a href="javascript:;">换一换</a>
 								<div class="clearfix"></div>
 							</li>
@@ -101,7 +101,7 @@
 					<div class="reg_foot">
 						<span class="f_span1">
 							已是寺库会员？
-							<a href="login.html">立即登录</a>
+							<a href="login.html" target="_black">立即登录</a>
 						</span>
 					</div>
 				</div>
@@ -113,24 +113,34 @@
 		<ul class="footer_list">
 			<li>
 				<a href="">新手指南</a>
+				<br>
 				<a href="">付款方式</a>
+				<br>
 				<a href="">物流配送</a>
+				<br>
 				<a href="">售后服务</a>
 			</li>
 			<li>
 				<a href="">寺库微博</a>
+				<br>
 				<a href="">友情链接</a>
+				<br>
 				<a href="">奢侈品热词</a>
 			</li>
 			<li>
 				<a href="">加入寺库</a>
+				<br>
 				<a href="">联系我们</a>
+				<br>
 				<a href="">关于寺库</a>
+				<br>
 				<a href="">帮助中心</a>
 			</li>
 			<li>
 				<a href="">寺库奢侈品养护</a>
+				<br>
 				<a href="">寺库招商</a>
+				<br>
 				<a href="">Investors</a>
 			</li>
 		</ul>
@@ -154,4 +164,6 @@
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/RegExp.js"></script>
 <script src="js/reg.js"></script>

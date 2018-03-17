@@ -91,13 +91,5 @@ $(function(){
 				}
 			}
 		}
-		
-		
 	});
-
 });
-//更换验证码函数封装
-function changeCode(){
-	var imgCode=document.getElementById("logImgCode");
-	imgCode.src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329545";
-}

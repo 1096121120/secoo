@@ -54,6 +54,9 @@ section .reg_content .reg_in .reg {
 section .reg_content .reg_in .reg .reg_list {
   width: 100%;
 }
+section .reg_content .reg_in .reg .reg_list input {
+  transition: border linear .2s, box-shadow linear .2s;
+}
 section .reg_content .reg_in .reg .reg_list li .user span {
   float: left;
   width: 60px;
@@ -63,6 +66,7 @@ section .reg_content .reg_in .reg .reg_list li .user span {
 }
 section .reg_content .reg_in .reg .reg_list li .user .user_tip {
   float: right;
+  font-size: 14px;
   width: 240px;
   height: 40px;
   line-height: 40px;
@@ -87,6 +91,7 @@ section .reg_content .reg_in .reg .reg_list li .pass span {
   color: #666;
 }
 section .reg_content .reg_in .reg .reg_list li .pass .pass_tip {
+  display: none;
   float: right;
   width: 240px;
   height: 40px;
@@ -112,6 +117,7 @@ section .reg_content .reg_in .reg .reg_list li .rePass span {
   color: #666;
 }
 section .reg_content .reg_in .reg .reg_list li .rePass .rePass_tip {
+  display: none;
   float: right;
   width: 240px;
   height: 40px;

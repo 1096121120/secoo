@@ -1,7 +1,3 @@
-/*function $(id) {
-	return document.getElementById(id);
-}
-*/
 /*
 	缓冲运动函数
 */
@@ -58,26 +54,8 @@ function getStyle(obj, attr) {
 		return getComputedStyle(obj, false)[attr];
 	}
 }
-
-/*
-	碰撞检测函数
-*/
-function boom(a,b){
-	if(
-		   a.offsetLeft + a.offsetWidth  <= b.offsetLeft
-		|| a.offsetTop  + a.offsetHeight <= b.offsetTop
-		|| b.offsetLeft + b.offsetWidth  <= a.offsetLeft
-		|| b.offsetTop  + b.offsetHeight <= a.offsetTop
-		){
-		return false;
-	}else{
-		return true;
-	}
-}
-
-/*
-	创建唯一的键名
-*/
-function createUniqueKey(){
-	return new Date().getTime()+Math.random();
+//更换验证码函数封装
+function changeCode(){
+	var imgCode=document.getElementById("logImgCode");
+	imgCode.src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329545";
 }
