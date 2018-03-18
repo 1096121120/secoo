@@ -1,0 +1,13 @@
+$(function(){
+	//更多选项
+	$(".hide_modal").hide();
+	$(".show_modal").click(function(){
+		$(this).hide();
+		$(".hide_modal").show();
+	});
+	//收起效果
+	$(".hide_modal").click(function(){
+		$(this).hide();
+		$(".show_modal").show();
+	});
+});

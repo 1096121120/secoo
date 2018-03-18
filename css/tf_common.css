@@ -52,10 +52,6 @@ header .topbar .topbar_con .medialink {
 header .topbar .topbar_con .service {
   float: right;
   position: relative;
-  transition: all 1s;
-}
-header .topbar .topbar_con .service:hover .service_modal {
-  display: block;
 }
 header .topbar .topbar_con .service .service_link {
   position: relative;
@@ -63,6 +59,9 @@ header .topbar .topbar_con .service .service_link {
   padding-right: 12px;
   color: #000;
   margin-left: 30px;
+}
+header .topbar .topbar_con .service .service_link .harrow {
+  transform: rotate(180deg);
 }
 header .topbar .topbar_con .service .service_link i {
   position: absolute;
@@ -72,6 +71,7 @@ header .topbar .topbar_con .service .service_link i {
   line-height: 0;
   top: 13px;
   right: 0;
+  transition: all .6s;
   border-bottom: none;
   border-top: 4px solid #f8a120;
   border-left: 4px solid transparent;
