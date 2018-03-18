@@ -203,6 +203,9 @@ section{
 			margin-top:1px;
 			text-align:center;
 			color:#666;
+			&:hover{
+				color:#e93b39;
+			}
 		}
 		.show_modal{
 			i{
@@ -212,6 +215,9 @@ section{
 				vertical-align:middle;
 				background:url("../imgs/search_icon3.png");
 				background-position:5px -109px;
+			}
+			&:hover i{
+				background-position:5px -424px;
 			}
 		}
 		.hide_modal{
@@ -226,6 +232,9 @@ section{
 				width:15px;
 				vertical-align:middle;
 				background-position:5px -444px;
+			}
+			&:hover i{
+				background-position:5px -412px;
 			}
 		}
 	}

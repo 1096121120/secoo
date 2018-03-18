@@ -4,10 +4,12 @@ $(function(){
 	$(".show_modal").click(function(){
 		$(this).hide();
 		$(".hide_modal").show();
+		$(".place_modal").show(500);
 	});
 	//收起效果
 	$(".hide_modal").click(function(){
 		$(this).hide();
 		$(".show_modal").show();
+		$(".place_modal").hide(500);
 	});
 });

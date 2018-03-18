@@ -207,6 +207,9 @@ section .control a {
   text-align: center;
   color: #666;
 }
+section .control a:hover {
+  color: #e93b39;
+}
 section .control .show_modal i {
   display: inline-block;
   height: 12px;
@@ -214,6 +217,9 @@ section .control .show_modal i {
   vertical-align: middle;
   background: url("../imgs/search_icon3.png");
   background-position: 5px -109px;
+}
+section .control .show_modal:hover i {
+  background-position: 5px -424px;
 }
 section .control .hide_modal {
   position: relative;
@@ -228,4 +234,7 @@ section .control .hide_modal i {
   width: 15px;
   vertical-align: middle;
   background-position: 5px -444px;
+}
+section .control .hide_modal:hover i {
+  background-position: 5px -412px;
 }
