@@ -1,10 +1,13 @@
 $(function(){
 	//顶部客户服务 进入
 	$(".service").bind("mouseover",".service_link",function(event){
-		var target=$(event.target);
-		$(".service_link").css({"color":"#f8a120"});
-		$(".service_modal").show();
-		$(this).find("i").addClass("harrow");
+		var target=event.target;
+		if(target.className=="service_link"){
+			$(".service_link").css({"color":"#f8a120"});
+			$(".service_modal").show();
+			$(this).find("i").addClass("harrow");
+		}
+		
 	})
 	//顶部客户服务 离开
 	$(".service").bind("mouseout",".service_link",function(event){

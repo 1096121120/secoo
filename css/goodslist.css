@@ -4,6 +4,7 @@ body {
 
 section {
   width: 100%;
+  /* product_box */
 }
 section .listPageContent {
   width: 1200px;
@@ -59,38 +60,38 @@ section .listPageContent .pageTitle em {
   background: url("../imgs/search_icon3.png") no-repeat;
   background-position: 12px 5px;
 }
-section .selectCondition {
+section .listPageContent .selectCondition {
   width: 1200px;
   margin: 0 auto;
   box-shadow: #cccccc 0px 2px 5px;
 }
-section .selectCondition dl {
+section .listPageContent .selectCondition dl {
   border-bottom: 1px dashed #ededed;
   min-height: 46px;
   position: relative;
   overflow: hidden;
   backgroundd: #f5f5f5;
 }
-section .selectCondition dl dt {
+section .listPageContent .selectCondition dl dt {
   float: left;
   width: 81px;
   padding-left: 30px;
   line-height: 45px;
   color: #666;
 }
-section .selectCondition dl dd {
+section .listPageContent .selectCondition dl dd {
   float: left;
   padding-left: 10px;
   width: 1078px;
   min-height: 46px;
   background: #fff;
 }
-section .selectCondition dl dd .brand {
+section .listPageContent .selectCondition dl dd .brand {
   padding-bottom: 12px;
   padding-left: 10px;
   width: 960px;
 }
-section .selectCondition dl dd .brand a {
+section .listPageContent .selectCondition dl dd .brand a {
   display: inline-block;
   border: 1px solid #e93b39;
   line-height: 20px;
@@ -104,7 +105,7 @@ section .selectCondition dl dd .brand a {
   text-overflow: ellipsis;
   position: relative;
 }
-section .selectCondition dl dd .brand a i {
+section .listPageContent .selectCondition dl dd .brand a i {
   font-style: normal;
   font-weight: bold;
   display: inline-block;
@@ -114,14 +115,14 @@ section .selectCondition dl dd .brand a i {
   right: 8px;
   top: 0;
 }
-section .selectCondition dl dd .smallList, section .selectCondition dl dd .place {
+section .listPageContent .selectCondition dl dd .smallList, section .listPageContent .selectCondition dl dd .place {
   padding: 1px 0 7px 0;
   max-height: 70px;
   height: auto;
   width: 960px;
   overflow: hidden;
 }
-section .selectCondition dl dd .smallList a, section .selectCondition dl dd .place a {
+section .listPageContent .selectCondition dl dd .smallList a, section .listPageContent .selectCondition dl dd .place a {
   display: inline-block;
   margin: 12px 0 0;
   height: 22px;
@@ -133,24 +134,24 @@ section .selectCondition dl dd .smallList a, section .selectCondition dl dd .pla
   text-overflow: ellipsis;
   color: #666;
 }
-section .selectCondition dl dd .smallList a:hover, section .selectCondition dl dd .place a:hover {
+section .listPageContent .selectCondition dl dd .smallList a:hover, section .listPageContent .selectCondition dl dd .place a:hover {
   color: #e93b39;
 }
-section .selectCondition dl dd .smallList a:hover b, section .selectCondition dl dd .place a:hover b {
+section .listPageContent .selectCondition dl dd .smallList a:hover b, section .listPageContent .selectCondition dl dd .place a:hover b {
   color: #666;
 }
-section .selectCondition dl dd .smallList a b, section .selectCondition dl dd .place a b {
+section .listPageContent .selectCondition dl dd .smallList a b, section .listPageContent .selectCondition dl dd .place a b {
   font-style: normal;
   font-weight: normal;
 }
-section .selectCondition dl dd .addMore {
+section .listPageContent .selectCondition dl dd .addMore {
   position: absolute;
   right: 70px;
   top: 19px;
   padding-left: 12px;
   color: #666;
 }
-section .selectCondition dl dd .addMore i {
+section .listPageContent .selectCondition dl dd .addMore i {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -159,20 +160,20 @@ section .selectCondition dl dd .addMore i {
   background: url("../imgs/search_icon3.png") no-repeat;
   background-position: 0 -70px;
 }
-section .selectCondition dl dd .addMore:hover {
+section .listPageContent .selectCondition dl dd .addMore:hover {
   color: #e93b39;
 }
-section .selectCondition dl dd .addMore:hover i {
+section .listPageContent .selectCondition dl dd .addMore:hover i {
   background-position: 0 -89px;
 }
-section .selectCondition dl .reset {
+section .listPageContent .selectCondition dl .reset {
   position: absolute;
   right: 30px;
   top: 19px;
   padding-left: 15px;
   color: #000;
 }
-section .selectCondition dl .reset i {
+section .listPageContent .selectCondition dl .reset i {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -181,22 +182,22 @@ section .selectCondition dl .reset i {
   background: url("../imgs/search_icon3.png") no-repeat;
   background-position: 0 -16px;
 }
-section .selectCondition dl .reset:hover {
+section .listPageContent .selectCondition dl .reset:hover {
   color: #e93b39;
 }
-section .selectCondition dl .reset:hover i {
+section .listPageContent .selectCondition dl .reset:hover i {
   background-position: -188px -16px;
 }
-section .selectCondition .place_modal {
+section .listPageContent .selectCondition .place_modal {
   display: none;
 }
-section .control {
+section .listPageContent .control {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 8px;
 }
-section .control a {
+section .listPageContent .control a {
   display: inline-block;
   box-shadow: #cccccc 0px 2px 5px;
   width: 80px;
@@ -207,10 +208,10 @@ section .control a {
   text-align: center;
   color: #666;
 }
-section .control a:hover {
+section .listPageContent .control a:hover {
   color: #e93b39;
 }
-section .control .show_modal i {
+section .listPageContent .control .show_modal i {
   display: inline-block;
   height: 12px;
   width: 20px;
@@ -218,13 +219,13 @@ section .control .show_modal i {
   background: url("../imgs/search_icon3.png");
   background-position: 5px -109px;
 }
-section .control .show_modal:hover i {
+section .listPageContent .control .show_modal:hover i {
   background-position: 5px -424px;
 }
-section .control .hide_modal {
+section .listPageContent .control .hide_modal {
   position: relative;
 }
-section .control .hide_modal i {
+section .listPageContent .control .hide_modal i {
   position: absolute;
   right: 10px;
   top: 6px;
@@ -235,6 +236,557 @@ section .control .hide_modal i {
   vertical-align: middle;
   background-position: 5px -444px;
 }
-section .control .hide_modal:hover i {
+section .listPageContent .control .hide_modal:hover i {
   background-position: 5px -412px;
+}
+section .product_box {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: #cccccc 0 2px 5px;
+  position: relative;
+}
+section .product_box .product_tips {
+  background: #fff;
+  overflow: hidden;
+  height: 40px;
+}
+section .product_box .product_tips a {
+  display: inline-block;
+  padding: 0 30px;
+  height: 29px;
+  text-align: center;
+  padding-top: 9px;
+  color: #999;
+  font: normal 18px/18px "microsoft yahei";
+  background: url("../imgs/listline.jpg") no-repeat center left;
+}
+section .product_box .product_tips a:hover {
+  color: #e93b39;
+}
+section .product_box .product_tips .tips_on {
+  color: #e93b39;
+  border-top: 2px solid #e93b39;
+}
+section .product_box .control_box {
+  height: 44px;
+  background: #f5f5f5;
+}
+section .product_box .control_box .product_control {
+  padding: 10px 30px 0;
+  min-height: 30px;
+  background: #f5f5f5;
+}
+section .product_box .control_box .product_control .control_btn {
+  margin-right: 10px;
+  vertical-align: top;
+  overflow: hidden;
+  float: left;
+}
+section .product_box .control_box .product_control .control_btn a {
+  float: left;
+  background: #fff;
+  width: 45px;
+  height: 22px;
+  text-align: center;
+  border: 1px solid #ededed;
+  z-index: 1;
+  line-height: 20px;
+  color: #666;
+}
+section .product_box .control_box .product_control .control_btn a i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  background: url("../imgs/search_icon3.png") no-repeat;
+  background-position: 5px -184px;
+}
+section .product_box .control_box .product_control .control_btn a:hover {
+  z-index: 2;
+  color: #e93b39;
+  border-color: #e93b39;
+}
+section .product_box .control_box .product_control .control_btn a:hover i {
+  background-position: 5px -204px;
+}
+section .product_box .control_box .product_control .control_btn .price_btn i {
+  background-position: 5px -217px;
+  height: 13px;
+}
+section .product_box .control_box .product_control .control_btn .price_btn:hover i {
+  background-position: 5px -245px;
+}
+section .product_box .control_box .product_control .control_btn .control_price_active {
+  background: #e93b39;
+  border-color: #e93b39;
+  color: #fff;
+}
+section .product_box .control_box .product_control .control_btn .control_price_active i {
+  background-position: 5px -259px;
+}
+section .product_box .control_box .product_control .control_btn .control_price_active:hover {
+  color: #fff;
+}
+section .product_box .control_box .product_control .control_btn .control_price_active:hover i {
+  background-position: 5px -259px;
+}
+section .product_box .control_box .product_control .control_btn .btn_active {
+  background: #e93b39;
+  border-color: #e93b39;
+  color: #fff;
+}
+section .product_box .control_box .product_control .control_btn .btn_active i {
+  background-position: 5px -194px;
+}
+section .product_box .control_box .product_control .control_btn .btn_active:hover {
+  color: #fff;
+}
+section .product_box .control_box .product_control .control_btn .btn_active:hover i {
+  background-position: 5px -194px;
+}
+section .product_box .control_box .product_control .control_price {
+  width: 124px;
+  height: 44px;
+  float: left;
+  vertical-align: middle;
+  margin: -10px 10px 0 0;
+  position: relative;
+}
+section .product_box .control_box .product_control .control_price .control_price_box {
+  width: 104px;
+  height: 24px;
+  padding: 10px 10px 0;
+  text-align: center;
+  vertival-align: middle;
+}
+section .product_box .control_box .product_control .control_price .control_price_box span {
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  backgrund: url("../imgs/search_icon3.png") no-repeat;
+  background-position: 3px -281px;
+  text-align: right;
+  vertical-align: middle;
+}
+section .product_box .control_box .product_control .control_price .control_price_box span input {
+  width: 33px;
+  height: 14px;
+  border: 0 none;
+  margin-top: 4px;
+  border-radius: #333;
+  vertical-align: middle;
+  outline: none;
+}
+section .product_box .control_box .product_control .control_price .control_price_box i {
+  display: inline-block;
+  border-top: 1px solid #acacac;
+  width: 8px;
+  margin: 0 1px;
+  height: 1px;
+  vertical-align: middle;
+}
+section .product_box .control_box .product_control .control_price .control_price_box a {
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  width: 45px;
+  height: 18px;
+  line-height: 17px;
+  margin: 10px 0;
+}
+section .product_box .control_box .product_control .control_price .control_price_btn {
+  display: none;
+  width: 124px;
+  height: 44px;
+  line-height: 24px;
+  position: absolute;
+  background: #ededed;
+  left: 0;
+  top: 34px;
+}
+section .product_box .control_box .product_control .control_price .control_price_btn .clearAll {
+  border: 1px solid #e0e0e0;
+  backgorund: #fff;
+  margin-right: 5px;
+  color: #666;
+}
+section .product_box .control_box .product_control .control_price .control_price_btn .clearAll:hover {
+  color: #e93b39;
+  border-color: #e93b39;
+}
+section .product_box .control_box .product_control .control_price .control_price_btn .ensure {
+  border: 1px solid #e93b39;
+  background: #e93b39;
+  color: #fff;
+}
+section .product_box .control_box .product_control .control_price .control_price_btn .ensure:hover {
+  background: #d32220;
+  border-color: #d32220;
+}
+section .product_box .control_box .product_control .control_check {
+  float: left;
+  height: 34px;
+  vertical-align: top;
+}
+section .product_box .control_box .product_control .control_check label {
+  padding-right: 15px;
+  color: #666;
+  padding-top: 4px;
+  display: inline-block;
+}
+section .product_box .control_box .product_control .control_check label input {
+  vertical-align: middle;
+}
+section .product_box .control_box .product_control .control_search {
+  float: left;
+  width: 192px;
+  height: 44px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: -10px 0 0 0;
+}
+section .product_box .control_box .product_control .control_search div {
+  position: relative;
+  width: 192px;
+  height: 24px;
+  padding: 10px 0 0;
+  vertical-align: middle;
+}
+section .product_box .control_box .product_control .control_search div span {
+  width: 149px;
+  height: 22px;
+  display: inline-block;
+  border: 1px solid #ededed;
+  background: #fff;
+  border-right: none;
+}
+section .product_box .control_box .product_control .control_search div span input {
+  outline: none;
+  color: #bbb6b6;
+  width: 139px;
+  height: 15px;
+  margin-top: 3px;
+  padding-left: 10px;
+  border: 0 none;
+  font-size: 12px;
+}
+section .product_box .control_box .product_control .control_search div a {
+  display: inline-block;
+  width: 40px;
+  height: 19px;
+  padding-top: 3px;
+  position: absolute;
+  right: 1px;
+  top: 10px;
+  text-align: center;
+  color: #666;
+  border: 1px solid #ededed;
+  background: #fff;
+}
+section .product_box .control_box .product_control .control_search div a:hover {
+  border-color: #000;
+}
+section .product_box .control_box .product_control .control_page {
+  /* position:absolute;
+  right:30px;
+  top:52px; */
+  float: right;
+  margin-top: 2px;
+  height: 19px;
+}
+section .product_box .control_box .product_control .control_page a {
+  width: 18px;
+  height: 18px;
+  line-height: 0px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  color: #bfbfbf;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+}
+section .product_box .control_box .product_control .control_page a i {
+  width: 6px;
+  height: 9px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  background: url("../imgs/search_icon3.png") no-repeat;
+}
+section .product_box .control_box .product_control .control_page span {
+  float: left;
+  height: 20px;
+  line-height: 19px;
+  padding: 0 10px;
+  color: #333;
+}
+section .product_box .control_box .product_control .control_page span b {
+  font-style: normal;
+  color: #e93b39;
+  font-weight: normal;
+}
+section .product_box .control_box .product_control .control_page .page_prev i {
+  background-position: -186px 0px;
+}
+section .product_box .control_box .product_control .control_page .page_next i {
+  background-position: -194px -29px;
+}
+section .product_box .control_box .control_fixed {
+  position: fixed;
+  width: 1140px;
+  z-index: 999;
+  top: -10px;
+  margin-top: 10px;
+  box-shadow: #cccccc 0 1px 5px;
+}
+section .product_box .product_content {
+  background: #fff;
+  padding: 30px 14px 2px;
+}
+section .product_box .product_content dl {
+  width: 240px;
+  height: 360px;
+  margin: 0 25px 56px 25px;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+}
+section .product_box .product_content dl:hover .show_tips {
+  width: 240px;
+  border: 2px solid #ededed;
+  background: #fff;
+  position: absolute;
+  left: -16px;
+  top: -26px;
+  padding: 24px 14px 15px;
+}
+section .product_box .product_content dl .show_tips {
+  border-color: #dedcdc;
+  transition: border-color 1s cubic-bezier(0.35, 0.2, 0.55, 1);
+}
+section .product_box .product_content dl .show_tips dt a img {
+  width: 240px;
+  height: 240px;
+}
+section .product_box .product_content dl .show_tips .dl_name {
+  height: 28px;
+  padding: 8px 0 3px;
+  line-height: 15px;
+  overflow: hidden;
+  border-top: 1px solid #ebebeb;
+  margin-top: 10px;
+}
+section .product_box .product_content dl .show_tips .dl_name a {
+  color: #323232;
+}
+section .product_box .product_content dl .show_tips .dl_name a:hover {
+  text-decoration: underline;
+}
+section .product_box .product_content dl .show_tips .dl_price {
+  display: block;
+  overflow: hidden;
+}
+section .product_box .product_content dl .show_tips .dl_price span i {
+  font-style: normal;
+}
+section .product_box .product_content dl .show_tips .dl_price .span_price {
+  float: left;
+  line-height: 16px;
+  font: bold 12px/16px "Tahoma";
+}
+section .product_box .product_content dl .show_tips .dl_price .span_num {
+  float: right;
+  line-height: 16px;
+  font: normal 12px/16px "Tahoma";
+  color: #999;
+}
+section .product_box .product_content dl .show_tips .add_cart {
+  display: none;
+  margin-top: 10px;
+}
+section .product_box .product_content dl .show_tips .add_cart a {
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+  text-align: center;
+  margign-top: 6px;
+  line-height: 20px;
+  color: #fff;
+  background: #e93b39;
+}
+section .product_box .product_content dl .show_tips .add_cart a:hover {
+  background: #d32220;
+}
+section .product_box .product_content dl .show_tips .loveHeart {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  width: 38px;
+  text-indent: 14px;
+  height: 20px;
+  background: url("../imgs/love.png") no-repeat 0 6px;
+  right: 13px;
+  bottom: 20px;
+  color: #999;
+  line-height: 20px;
+}
+section .product_box .product_content dl .show_tips .loveHeart:hover {
+  background-position: 0 -29px;
+}
+section .product_box .product_content dl .show_tips .loveHeart:hover i {
+  color: #e93b39;
+}
+section .product_box .product_content dl .show_tips .loveHeart i {
+  font-style: normal;
+}
+section .product_box .product_page {
+  background: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: -19px;
+}
+section .product_box .product_page a {
+  color: #666;
+  display: inline-block;
+  line-height: 20px;
+  height: 22px;
+  border: 1px solid #e8e8e8;
+  padding: 0 8px;
+  vertical-align: top;
+}
+section .product_box .product_page .prev {
+  color: #999;
+  border-color: #ccc;
+  background: none;
+  cursor: not-allowed;
+}
+section .product_box .product_page .next {
+  color: #999;
+  border-color: #ccc;
+  background: none;
+  cursor: not-allowed;
+}
+section .product_box .product_page .on {
+  color: #e93a38;
+  background: none;
+  border: none;
+}
+section .product_box .product_page strong {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #666;
+  margin: 0 10px;
+  font-weight: normal;
+  vertical-align: 8px;
+}
+section .product_box .product_page strong i {
+  font-style: normal;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 3px 0 2px;
+}
+section .product_box .product_page strong b {
+  width: 40px;
+  height: 22px;
+  border: 1px solid #ededed;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+section .product_box .product_page strong b input {
+  border: 0 none;
+  outline: none;
+  width: 30px;
+  text-align: center;
+  margin: 4px 0 0 0;
+  padding: 0 5px;
+}
+section .product_box .product_page .confirm_sure:hover {
+  border: 1px solid #000;
+}
+section .product_box .product_more {
+  background: #fff;
+  padding-bottom: 62px;
+}
+section .product_box .product_more .product_more_title {
+  padding: 0 30px 13px;
+  font-weight: bold;
+}
+section .product_box .product_more .product_more_list {
+  padding-bottom: 10px;
+}
+section .product_box .product_more .product_more_list dl {
+  display: inline-block;
+  width: 162px;
+  margin: 0 0 15px 34px;
+  vertical-align: top;
+}
+section .product_box .product_more .product_more_list dl dt a {
+  display: block;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  border: 1px solid #eee;
+  vertlcal-align: middle;
+}
+section .product_box .product_more .product_more_list dl dt a img {
+  width: 100%;
+}
+section .product_box .product_more .product_more_list dl .dd_name {
+  margin: 8px 0 2px;
+  height: 32px;
+  overflow: hidden;
+}
+section .product_box .product_more .product_more_list dl .dd_name a {
+  color: #666;
+  line-height: 16px;
+}
+section .product_box .product_more .product_more_list dl .dd_name a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+section .product_box .product_more .product_more_list dl .dd_price {
+  font: bold 12px/14px "microsoft yahei";
+  color: #000;
+}
+section .product_box .product_more .product_more_list dl .dd_price span i {
+  font-style: normal;
+}
+section .product_box .search_other_box {
+  background: #fff;
+  overflow: hidden;
+}
+section .product_box .search_other_box .search_other {
+  width: 707px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+section .fixedTop {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 50%;
+  margin-left: 605px;
+  bottom: 20%;
+  cursor: pointer;
+}
+section .fixedTop a {
+  display: block;
+  width: 40px;
+  height: 35px;
+}
+section .fixedTop a em {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background: #fff url("../imgs/fixedtop1.png") no-repeat -52px -2px;
+}
+section .fixedTop:hover a em {
+  background-color: #000;
+  background-position: 0 0;
 }
