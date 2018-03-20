@@ -34,7 +34,25 @@ $(function(){
 		$(this).css({"background":"#f5f5f5"});
 		$(".control_price_btn").hide();
 	});
-	//
+	//输入框清空功能
+	// 限制只能输入纯数字
+	$(".control_price_box span input").bind("input propertychange",function(){
+		var value=$(this).val().replace(/[^\d]/g,"");
+		$(this).val(value);
+	});
+	//获得焦点
+	$(".control_price_box span input").focus(function(){
+	});
+	//失去焦点
+	$(".control_price_box span input").blur(function(){
+	});
+	//点击清空
+	$(".clearAll").click(function(){
+		$(".control_price_box span input").val("");
+		$(".start_price").focus();
+	});
+
+
 
 	//搜索框获得焦点
 	$(".control_search span input").focus(function(){

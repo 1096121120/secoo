@@ -371,13 +371,13 @@ section .product_box .control_box .product_control .control_price .control_price
   vertical-align: middle;
 }
 section .product_box .control_box .product_control .control_price .control_price_box span input {
-  width: 33px;
+  width: 45px;
   height: 14px;
   border: 0 none;
   margin-top: 4px;
-  border-radius: #333;
   vertical-align: middle;
   outline: none;
+  color: #666;
 }
 section .product_box .control_box .product_control .control_price .control_price_box i {
   display: inline-block;
