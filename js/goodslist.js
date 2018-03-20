@@ -64,7 +64,67 @@ $(function(){
 	//返回顶部
 	$(".fixedTop").click(function(){
 		$('html,body').animate({ scrollTop: 0 }, 700);
-	})
+	});
+
+	// 底部搜索
+	//判断搜索框中内容是否为空
+	$(".search_input input").bind("input propertychange",function(){
+		if($(this).val()==""){
+			$(".search_close").hide();
+		}else{
+			$(".search_close").show();
+		}
+	});
+
+	//底部满意度
+	//点击满意或者不满意让输入框显示
+	$(".ev_head a").click(function(){
+		$(this).addClass("ev_act").siblings("a").removeClass("ev_act");
+		$(".ev_con").slideDown("200");
+	});
+	//点击关闭按按钮  关闭满意度调查
+	$(".ev_close").click(function(){
+		$(".evaluate").hide("200");
+	});
+	//输入框获得焦点
+	$(".ev_text textarea").focus(function(){
+		if($(this).text()=="希望您在此发表您的想法和建议"){
+			$(this).text("");
+		}
+	});
+	//输入框失去焦点
+	$(".ev_text textarea").blur(function(){
+		if($(this).text()==""){
+			$(this).text("希望您在此发表您的想法和建议");
+		}
+	});
+	//输入框实时监测输入内容
+	$(".ev_text textarea").bind("input propertychange",function(){
+		if($(this).val()==""){
+			$(".ev_submit").css({
+				"background":"#ccc",
+				"cursor":"not-allowed"
+			});
+		}else{
+			$(".ev_submit").css({
+				"background":"#000",
+				"cursor":"pointer"
+			});
+		}
+		//实时获取用户输入的长度
+		var num=(100-$(this).val().length);
+		if(num<0){
+			num=0;
+		}
+		$(".ev_text p").text(num+"字");
+	});
+	
+
+	//点击错号删除内容
+	$(".search_close").click(function(){
+		$(this).hide();
+		$(".search_input input").val("");
+	});
 });
 $(window).scroll(function(){
 	//顶部悬浮  判断临界值是否大于405

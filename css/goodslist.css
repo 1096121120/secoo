@@ -758,12 +758,57 @@ section .product_box .product_more .product_more_list dl .dd_price span i {
 }
 section .product_box .search_other_box {
   background: #fff;
-  overflow: hidden;
 }
 section .product_box .search_other_box .search_other {
   width: 707px;
   margin: 0 auto;
+  overflow: hidden;
   padding-bottom: 40px;
+}
+section .product_box .search_other_box .search_other .search_input {
+  position: relative;
+  height: 31px;
+  border: 2px solid #463b7f;
+  float: left;
+}
+section .product_box .search_other_box .search_other .search_input input {
+  width: 612px;
+  height: 27px;
+  line-height: 20px;
+  padding: 2px 10px 2px 10px;
+  border: none;
+  outline: none;
+  color: #333333;
+}
+section .product_box .search_other_box .search_other .search_input i {
+  display: none;
+  background: url("../imgs/search-close.png");
+  background-position: left top;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  cursor: pointer;
+}
+section .product_box .search_other_box .search_other .search_input i:hover {
+  background-position: left bottom;
+}
+section .product_box .search_other_box .search_other .search_btn {
+  float: left;
+}
+section .product_box .search_other_box .search_other .search_btn a {
+  width: 69px;
+  height: 35px;
+  background: #5b4f9d;
+  background-image: linear-gradient(#5b4f9d, #4b4082);
+  text-align: center;
+  line-height: 33px;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 2px 1px #390010;
 }
 section .fixedTop {
   display: none;
@@ -789,4 +834,90 @@ section .fixedTop a em {
 section .fixedTop:hover a em {
   background-color: #000;
   background-position: 0 0;
+}
+section .evaluate {
+  width: 1200px;
+  margin: 30px auto 0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 13px #cccccc;
+}
+section .evaluate .evaluate_box {
+  padding: 20px 30px 10px;
+}
+section .evaluate .evaluate_box .ev_head {
+  color: #000;
+}
+section .evaluate .evaluate_box .ev_head .ev_tit {
+  float: left;
+  padding-top: 6px;
+}
+section .evaluate .evaluate_box .ev_head a {
+  display: inline-block;
+  float: left;
+  border: 1px solid #ededed;
+  padding: 5px 10px;
+  color: #000;
+  margin-left: 10px;
+}
+section .evaluate .evaluate_box .ev_head a:hover {
+  border-color: #000;
+}
+section .evaluate .evaluate_box .ev_head .ev_act {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+section .evaluate .evaluate_box .ev_head .ev_close {
+  float: right;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: url("../imgs/search-close.png") no-repeat;
+}
+section .evaluate .evaluate_box .ev_head .ev_close:hover {
+  background-position: left bottom;
+}
+section .evaluate .evaluate_box .ev_tips {
+  color: #999;
+  margin-left: -5px;
+  padding: 19px 0;
+}
+section .evaluate .evaluate_box .ev_con {
+  display: none;
+  height: 142px;
+  overflow: hidden;
+}
+section .evaluate .evaluate_box .ev_con .ev_text {
+  border: 1px solid #ededed;
+  position: relative;
+}
+section .evaluate .evaluate_box .ev_con .ev_text textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  text-indent: 10px;
+  paaddding: 10px;
+  width: 98%;
+  height: 70px;
+  color: #999;
+  font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB;
+  font-size: 12px;
+}
+section .evaluate .evaluate_box .ev_con .ev_text p {
+  padding: 5px;
+  color: #999;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+section .evaluate .evaluate_box .ev_con .ev_submit {
+  display: block;
+  background: #ccc;
+  color: #fff;
+  margin: 20px auto 10px;
+  width: 76px;
+  padding: 7px 0;
+  text-align: center;
+  cursor: not-allowed;
 }
