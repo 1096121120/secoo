@@ -1,0 +1,261 @@
+body {
+  background: #ededed;
+}
+
+input[type=checkbox] {
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.8);
+}
+header .header_con {
+  width: 990px;
+  margin: 0 auto;
+}
+header .header_con .header_left {
+  float: left;
+  width: 30px;
+}
+header .header_con .header_right {
+  float: right;
+}
+
+section {
+  width: 990px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+section .login_tip {
+  color: #666;
+  margin-bottom: -2px;
+  padding-left: 18px;
+  line-height: 28px;
+  margin-top: 4px;
+  color: #666;
+}
+section .login_tip a {
+  color: #e93b39;
+  padding: 0 10px;
+}
+section .login_tip a:hover {
+  text-decoration: underline;
+}
+section .cartBox .cartList {
+  width: 986px;
+  border: 1px solid #f1f1f1;
+  padding: 1px;
+  background: #fff;
+  position: relative;
+}
+section .cartBox .cartList .cartTable {
+  width: 100%;
+  color: #666;
+  border-collapse: collapse;
+}
+section .cartBox .cartList .cartTable thead tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+section .cartBox .cartList .cartTable thead tr th {
+  height: 48px;
+  font-weight: normal;
+  background: url("../imgs/c_02.jpg");
+  color: #999;
+  boder-bottom: 1px solid #fff;
+}
+section .cartBox .cartList .cartTable tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  color: #666;
+}
+section .cartBox .cartList .cartTable tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+section .cartBox .cartList .cartTable tbody tr td {
+  border-top: 1px solid #ececec;
+  text-align: center;
+  line-height: 22px;
+  margin-top: -1px;
+  padding: 20px 0 15px;
+  background: #fdf0ef;
+  display: table-cell;
+}
+section .cartBox .cartList .cartTable tbody tr td .shop_imgA {
+  float: left;
+  padding-right: 15px;
+  color: #666;
+}
+section .cartBox .cartList .cartTable tbody tr td .shop_imgA img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ececec;
+  vertical-align: middle;
+}
+section .cartBox .cartList .cartTable tbody tr td .cartName {
+  width: 255px;
+  overflow: hidden;
+  text-align: left;
+  float: left;
+}
+section .cartBox .cartList .cartTable tbody tr td .cartName a {
+  color: #333;
+}
+section .cartBox .cartList .cartTable tbody tr td .cartName a:hover {
+  text-decoration: underline;
+}
+section .cartBox .cartList .cartTable tbody tr td .countNum {
+  width: 58px;
+  margin: 0 auto 2px;
+  overflow: hidden;
+}
+section .cartBox .cartList .cartTable tbody tr td .countNum span {
+  float: left;
+  width: 11px;
+  height: 18px;
+  line-height: 16px;
+  text-align: centerr;
+  color: #666;
+  padding-right: 1px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #eaeaea;
+}
+section .cartBox .cartList .cartTable tbody tr td .countNum span:hover {
+  background: #e93b39;
+  color: #fff;
+}
+section .cartBox .cartList .cartTable tbody tr td .countNum .count_box {
+  float: left;
+  margin-top: -2px;
+}
+section .cartBox .cartList .cartTable tbody tr td .countNum .count_box .count {
+  width: 30px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  border-right: 0;
+  color: #666;
+  outline: none;
+  font-size: 12px;
+}
+section .cartBox .cartList .cartTable tbody tr td strong {
+  color: #e93b39;
+}
+section .cartBox .cartList .cartTable tbody tr td .delete {
+  color: #333;
+}
+section .cartBox .cartList .cartTable tbody tr td .delete:hover {
+  color: #e93b39;
+  text-decoration: underline;
+}
+section .cartBox .cartPrice {
+  padding: 15px 45px 25px 30px;
+  margin-top: 6px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+}
+section .cartBox .cartPrice .operation {
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  left: 31px;
+  top: 17px;
+  overflow: hidden;
+}
+section .cartBox .cartPrice .operation .op_checkAll {
+  float: left;
+  width: 78px;
+}
+section .cartBox .cartPrice .operation .delete_sel {
+  float: left;
+  padding-left: 20px;
+  background: url("../imgs/c_06.jpg") no-repeat;
+  cursor: pointer;
+  color: #c69c6d;
+  height: 16px;
+  line-height: 16px;
+  padding-top: 1px;
+}
+section .cartBox .cartPrice .operation .delete_sel a {
+  color: #666;
+}
+section .cartBox .cartPrice .operation .delete_sel:hover {
+  background: url("../imgs/c_061.png") no-repeat;
+}
+section .cartBox .cartPrice .operation .delete_sel:hover a {
+  color: #e93b39;
+}
+section .cartBox .cartPrice p {
+  text-align: right;
+  padding: 4px 0;
+  color: #333;
+}
+section .cartBox .cartPrice .totalPrice {
+  margin-top: 5px;
+}
+section .cartBox .cartPrice .totalPrice strong {
+  font-family: tahoma;
+  color: #e93b39;
+  font-size: 30px;
+  font-weight: normal;
+}
+section .cartBox .cartPrice .settlement a:first-child {
+  float: left;
+  padding: 5px 15px;
+  border: 1px solid #e93b39;
+  color: #e93b39;
+  margin-top: 12px;
+}
+section .cartBox .cartPrice .settlement a:last-child {
+  float: right;
+  padding: 10px 40px;
+  background-color: #e93b39;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: microsoft yahei;
+}
+section .guessBox {
+  width: 990px;
+  margin: 0 auto;
+}
+section .guessBox .guess {
+  margin-top: 30px;
+  width: 986px;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  padding: 1px;
+}
+section .guessBox .guess h3 {
+  height: 38px;
+  background-color: #ececec;
+  line-height: 38px;
+  text-indent: 24px;
+  font-weight: bold;
+  color: #666;
+}
+section .guessBox .guess .list {
+  overflow: visible;
+  height: 225px;
+  width: 946px;
+  background: #fff;
+  margin: 0 auto;
+}
+section .guessBox .guess .list .carousel {
+  margin: 20px 10px;
+  width: 926px;
+  height: 185px;
+  background: red;
+}

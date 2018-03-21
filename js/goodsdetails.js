@@ -15,27 +15,36 @@ $(function(){
 		//让文字改变颜色
 		$(this).find("a").css({"color":"#666"});
 	});
-	//购买数量加
-	var count=$(".num_count").val();
-	$(".num_up").click(function(){
-		count++;
-		if(count>1){
-			$(".num_down").css({
-				"cursor":"pointer"
-			});
-		}
-		$(".num_count").val(count);
+	//增减数量表单实时改变
+	$(".num_count").bind("input propertychange",function(){
+		//购买数量加
+		var count=$(".num_count").val();
+		$(".num_up").click(function(){
+			count++;
+			if(count>1){
+				$(".num_down").css({
+					"cursor":"pointer"
+				});
+			}
+			$(".num_count").val(count);
+		});
+		//购买数量减
+		$(".num_down").click(function(){
+			count--;
+			if(count<1){
+				count=1;
+				$(this).css({
+					"cursor":"not-allowed"
+				})
+			}
+			$(".num_count").val(count);
+		});
 	});
-	//购买数量减
-	$(".num_down").click(function(){
-		count--;
-		if(count<1){
-			count=1;
-			$(this).css({
-				"cursor":"not-allowed"
-			})
+	//失去焦点
+	$(".num_count").blur(function(){
+		if($(this).val()<1){
+			$(this).val("1");
 		}
-		$(".num_count").val(count);
 	});
 
 	//小图移入效果
