@@ -88,16 +88,6 @@ section{
 					.bigImg{
 						width:100%;
 					}
-					.img_modal{
-						z-index:999;
-						display:none;
-						width:460px;
-						height:400px;
-						position:absolute;
-						left:430px;
-						top:-1px;
-						border:1px solid #ededed;
-					}
 					.zoomSpan{
 						display:none;
 						position:absolute;
@@ -108,6 +98,25 @@ section{
 						background:url("../imgs/zoomspan.gif")repeat;
 						text-align:center;
 						overflow:hidden;
+						cursor:move;
+					}
+					.large_box{
+						position:absolute;
+						display:none;
+						left:430px;
+						top:-1px;
+						width:460px;
+						height:400px;
+						overflow:hidden;
+						border:1px solid #ededed;
+						.img_modal{
+							z-index:999;
+							position:absolute;
+							width:560px;
+							height:500px;
+							left:0;
+							top:0;
+						}
 					}
 				}
 			}
@@ -335,4 +344,224 @@ section{
 		}
 	}
 	/*放大镜内容结束*/
+	/*产品展示开始*/
+	.productShow_box{
+		padding-top:30px;
+		width:1210px;
+		margin-left:-5px;
+		.product_left{
+			float:left;
+			width:200px;
+			padding:0 5px;
+			h3{
+				height:36px;
+				width:100%;
+				line-height:36px;
+				text-align:center;
+				color:#fff;
+				background:#333333;
+				box-shadow:0 2px 5px #ccc;
+				font-size:12px;
+				font-weight:normal;
+			}
+			.showLeftCon{
+				box-shadow:0 2px 5px #ccc;
+				margin-bottom:15px;
+				width:200px;
+				border-top:0;
+				background:#fff;
+				overflow:hidden;
+				ul{
+					overflow:hidden;
+					li{
+						overflow:hidden;
+						position:relative;
+						width:150px;
+						margin:0 auto;
+						border-top:1px solid #f1f1f1;
+						padding:10px 0;
+						transition:all 1s;
+						a{
+							overflow: hidden;
+    						position: absolute;
+							width: 150px;
+						    height: 71px;
+						    left: 0;
+						    top: 10px;
+						}
+						.show_img{
+							float:left;
+							margin-top:10px;
+							width:50px;
+							transition:all .3s;
+							overflow:hidden;
+							border:1px solid transparent;
+							img{
+								width:100%;
+							}
+						}
+						.show_text{
+							float:right;
+							width:90px;
+							.show_name{
+								height:36px;
+								line-height:18px;
+								color:#656565;
+								overflow:hidden;
+							}
+							.show_price{
+								color:#656565;
+								padding-top:5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.product_right{
+			float:right;
+			width:970px;
+			overflow:hidden;
+			padding:0 5px;
+			.firstNav{
+				z-index:999;
+				ul{
+					overflow:hidden;
+					li{
+						color: #fff;
+					    height: 36px;
+					    line-height: 36px;
+					    text-align: center;
+					    float: left;
+					    width: 189px;
+					    position: relative;
+					    cursor: pointer;
+					    background-color: #333333;
+					    border-right: 1px solid #fff;
+					    a{
+					    	display:inline-block;
+					    	width:100%;
+					    	height:36px;
+					    }
+					    &:first-child{
+					    	background:#7f69b3;
+					    	a{
+					    		color:#fff;
+					    	}
+					    }
+					    &:last-child{
+					    	width:210px;
+					    	height:36px;
+					    	background:url("../imgs/detail_icon6.png")no-repeat;
+					    	background-position:-11px -642px;
+					    }
+					}
+				}
+			}
+			.content{
+				background:#fff;
+				box-shadow:0 2px 5px #ccc;
+				.content_detail{
+					display:block;
+					padding:0 30px;
+					overflow:hidden;
+					.promiseImg{
+						margin:40px 0 0;
+					}
+				}
+				.parameter{
+					height:17px;
+					overflow:hidden;
+					width:100%;
+					position:relative;
+					padding:50px 0 20px;
+					span{
+						display:block;
+						background:url("../imgs/details_2015bg.gif")no-repeat;
+						height:17px;
+
+					}
+				}
+				.pro_info{
+					line-height:34px;
+					span{
+						display:inline-block;
+						background:#f6f6f6;
+						height:34px;
+						line-height:34px;
+						padding-left:25px;
+						color:#333;
+						width:198px;
+					}
+				}
+				.pro_story{
+					.story_top{
+						height:17px;
+						width:100%;
+						position:relative;
+						padding:50px 0 20px;
+						span{
+							display:block;
+							height:17px;
+							background:url("../imgs/details_2015bg.gif")no-repeat;
+							background-position:0 -17px;
+						}
+					}
+					.story_bottom{
+						overflow:hidden;
+						border:1px solid rgb(223,223,223);
+						.brandImg{
+							float:left;
+							width:320px;
+							height:240px;
+							img{
+								width:100%;
+							}
+						}
+						.brandText{
+							float:right;
+							width:507px;
+							height:220px;
+							overflow:hidden;
+							padding:10px 40px;
+							background:#f5f5f5;
+							.tit{
+								text-align:center;
+								color:#666;
+								font:bold 24px/24px Microsoft Yahei;
+								padding:30px 0 16px;
+							}
+							.con{
+								color:#666;
+								font-size:12px;
+								line-height:21px;
+							}
+						}
+					}
+				}
+				.pro_con{
+					.top{
+						height: 17px;
+					    overflow: hidden;
+					    width: 100%;
+					    position: relative;
+					    padding: 50px 0 20px;
+					    span{
+					    	display:block;
+					    	height:17px;
+					    	background:url("../imgs/details_2015bg.gif")no-repeat;
+					    	background-position:0 -51px;
+					    }
+					}
+					p{
+						text-align:center;
+						img{
+							max-width:910px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/*产品展示结束*/
 }
