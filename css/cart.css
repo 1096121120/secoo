@@ -227,35 +227,3 @@ section .cartBox .cartPrice .settlement a:last-child {
   font-size: 14px;
   font-family: microsoft yahei;
 }
-section .guessBox {
-  width: 990px;
-  margin: 0 auto;
-}
-section .guessBox .guess {
-  margin-top: 30px;
-  width: 986px;
-  border: 1px solid #f1f1f1;
-  background-color: #fff;
-  padding: 1px;
-}
-section .guessBox .guess h3 {
-  height: 38px;
-  background-color: #ececec;
-  line-height: 38px;
-  text-indent: 24px;
-  font-weight: bold;
-  color: #666;
-}
-section .guessBox .guess .list {
-  overflow: visible;
-  height: 225px;
-  width: 946px;
-  background: #fff;
-  margin: 0 auto;
-}
-section .guessBox .guess .list .carousel {
-  margin: 20px 10px;
-  width: 926px;
-  height: 185px;
-  background: red;
-}

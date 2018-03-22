@@ -59,3 +59,33 @@ function changeCode(){
 	var imgCode=document.getElementById("logImgCode");
 	imgCode.src="http://passport.secoo.com/common/captcha.jsp?type=login&amp;t=1521162329545";
 }
+//cookie读取
+// 添加和修改cookie
+function setCookie(name, value, days, path) {
+	days = days || 0;
+	path = path || '/';
+	var oDate = new Date();
+	oDate.setDate(oDate.getDate() + days);
+	document.cookie = name + '=' + encodeURIComponent(value) +';expires=' + oDate +';path=' + path;
+}
+
+// 获取cookie
+function getCookie(name) {
+	var aCookie = document.cookie.split('; ');
+	for(var i = 0; i < aCookie.length; i++) {
+		var temp = aCookie[i].split('=');
+
+		if(temp[0] === name) {
+			return decodeURIComponent(temp[1]);
+		}
+	}
+}
+//删除cookie
+function removeCookie(name,path){
+	path=path||"/";
+	document.cookie=name+"=;expires=-1;path="+path;
+}
+//遮罩层关闭
+$(".modal_close").click(function(){
+	$(".zzc_modal").hide();
+});

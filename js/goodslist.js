@@ -69,15 +69,6 @@ $(function(){
 		}
 	});
 
-	//商品内容
-	$("dl").mouseenter(function(){
-		$(this).find(".add_cart").css({"display":"inline-block"});
-		$(this).find(".loveHeart").show();
-	});
-	$("dl").mouseleave(function(){
-		$(this).find(".add_cart").hide();
-		$(this).find(".loveHeart").hide();
-	});
 
 	//返回顶部
 	$(".fixedTop").click(function(){

@@ -37,3 +37,73 @@ img {
   overflow: hidden;
   visibility: hidden;
 }
+
+.zzc_modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.zzc_modal .box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -155px;
+  margin-top: -90px;
+  width: 310px;
+  height: 180px;
+  border: 2px solid #ededed;
+}
+.zzc_modal .box .boxTit {
+  width: 100%;
+  height: 40px;
+  background: #463a7e;
+  font: normal 16px/39px "microsoft yahei";
+  text-indent: 20px;
+  color: #fff;
+}
+.zzc_modal .box .boxTit span {
+  float: right;
+  cursor: pointer;
+  padding-right: 10px;
+  font-size: 28px;
+}
+.zzc_modal .box .boxContent {
+  width: 100%;
+  height: 140px;
+  background: #fff;
+}
+.zzc_modal .box .boxContent .success {
+  width: 100%;
+  height: 100px;
+  color: #000;
+  color: #463a7e;
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+}
+.zzc_modal .box .boxContent .boxBtn {
+  width: 240px;
+  margin: 0 auto;
+  height: 40px;
+  text-align: center;
+}
+.zzc_modal .box .boxContent .boxBtn a {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  background: red;
+}
+.zzc_modal .box .boxContent .boxBtn a:first-child {
+  background: #e93b39;
+  color: #fff;
+}
+.zzc_modal .box .boxContent .boxBtn a:last-child {
+  background: #ededed;
+  color: #999;
+}
